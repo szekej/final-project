@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #ffcb05; 
+    --secondary-color: #007bff;
+    --text-color: #333; 
+}
+
+.main {
+    padding-top: 120px; 
+    padding-bottom: 60px; 
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-section, .mission-section {
+    background-color: var(--primary-color);
+    color: #fff; 
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-section {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-section .team-members {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.team-member {
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+}
+
+.contact-section, .form-section {
+    background-color: var(--secondary-color); 
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-section {
+    margin-top: 2rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #fff; 
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.submit-button {
+    background-color: var(--primary-color); 
+    color: #fff; 
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #ffdb58;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+    z-index: 1000; 
+}
+
+.header__nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav ul li {
+    font-size: 1.2rem;
+}
+
+.header__nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header__nav ul li a:hover {
+    color: #ffcb05; 
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: #fff; 
+    padding: 20px;
+    text-align: center;
+    z-index: 1000; 
+}
+
+.trainer-card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 20px;
+}
+
+.trainer-info {
+    text-align: center;
+}
+
+.trainer-name {
+    font-size: 2rem;
+    color: var(--secondary-color); 
+}
+
+.trainer-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.trainer-location,
+.trainer-age,
+.trainer-badge-count {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.trainer-bio {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.trainer-image {
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.pokemon-team {
+    margin-top: 40px;
+}
+
+.team-heading {
+    font-size: 1.5rem;
+    color: var(--secondary-color); 
+}
+
+.pokemon-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pokemon {
+    text-align: center;
+    margin: 10px;
+    width: 120px;
+}
+
+.pokemon-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.achievements-heading {
+    font-size: 1.5rem;
+    color: var(--secondary-color); 
+}
+
+.achievements-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.achievement {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
